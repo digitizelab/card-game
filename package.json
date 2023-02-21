@@ -16,13 +16,15 @@
     "start": "node dist/main/index.js",
     "debug": "nodemon -L --watch ./dist --inspect=0.0.0.0:9222 --nolazy ./dist/main/index.js",
     "build": "tsc -p tsconfig-build.json",
-    "build:watch": "tsc -p tsconfig-build.json -w"
+    "build:watch": "tsc -p tsconfig-build.json -w",
+    "test": "jest --passWithNoTests --runInBand --no-cache",
+    "test:ci": "npm test -- --coverage"
   },
   "dependencies": {
     "module-alias": "^2.2.2"
   },
   "devDependencies": {
-    "nodemon": "^2.0.20",
+    "@types/jest": "^27.5.2",
     "@types/node": "^16.9.1",
     "@typescript-eslint/eslint-plugin": "^4.31.1",
     "eslint": "^7.32.0",
@@ -31,6 +33,9 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-standard": "^5.0.0",
+    "jest": "^27.5.1",
+    "nodemon": "^2.0.20",
+    "ts-jest": "^27.1.5",
     "typescript": "^4.4.3"
   },
   "engines": {

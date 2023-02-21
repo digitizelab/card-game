@@ -10,6 +10,14 @@ export class Deck {
     }
   }
 
+  get cards (): Card[] {
+    return this._cards
+  }
+
+  /**
+   * Shuffled using Fisher-Yates shuffle
+   * https://medium.com/@oldwestaction/randomness-is-hard-e085decbcbb2
+   */
   shuffle (): void {
     for (let i = this._cards.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));

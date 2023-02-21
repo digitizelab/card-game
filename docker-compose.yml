@@ -1,0 +1,11 @@
+version: "3"
+services:
+  game:
+    container_name: game-container
+    image: node:16
+    working_dir: /usr/src/card-game
+    restart: on-failure:5
+    command: bash -c "npm install --only=prod && npm start"
+    volumes:
+      - ./dist/:/usr/src/card-game/dist/
+      - ./package.json:/usr/src/card-game/package.json

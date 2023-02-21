@@ -19,6 +19,12 @@ npm start
 npm run test:ci
 ```
 
+## Running with Docker
+
+```sh 
+npm run up
+```
+
 ## Running the game with hot-reload
 
 ```sh

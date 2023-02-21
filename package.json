@@ -18,7 +18,9 @@
     "build": "tsc -p tsconfig-build.json",
     "build:watch": "tsc -p tsconfig-build.json -w",
     "test": "jest --passWithNoTests --runInBand --no-cache",
-    "test:ci": "npm test -- --coverage"
+    "test:ci": "npm test -- --coverage",
+    "up": "npm run build && docker-compose up -d",
+    "down": "docker-compose down --remove-orphans"
   },
   "dependencies": {
     "module-alias": "^2.2.2"

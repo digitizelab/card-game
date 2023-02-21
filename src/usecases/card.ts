@@ -1,4 +1,4 @@
-class Card {
+export class Card {
   private readonly _value: number
 
   constructor (value: number) {
@@ -9,5 +9,3 @@ class Card {
     return this._value
   }
 }
-
-export default Card

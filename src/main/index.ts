@@ -1,5 +1,5 @@
 import 'module-alias/register'
-import Card from '@/usecases/card'
+import { Deck } from '@/usecases'
 
-const card = new Card(1)
-console.log(card.value)
+const deck = new Deck()
+deck.shuffle()

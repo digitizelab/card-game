@@ -1,0 +1,19 @@
+{
+  "name": "card-game",
+  "version": "1.0.0",
+  "description": "Two player card game",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/digitizelab/card-game.git"
+  },
+  "author": "Nishan Karunarathna <info@nishan.me>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/digitizelab/card-game/issues"
+  },
+  "homepage": "https://github.com/digitizelab/card-game#readme"
+}

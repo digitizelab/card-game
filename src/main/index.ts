@@ -1,5 +1,5 @@
 import 'module-alias/register'
-import { Deck } from '@/usecases'
+import { Game } from '@/usecases'
 
-const deck = new Deck()
-deck.shuffle()
+const game = new Game('Alfred', 'Robert')
+game.play()

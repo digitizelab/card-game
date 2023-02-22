@@ -25,9 +25,9 @@ export class Game {
    * Reveal single card from each player and decide the round winner
    */
   playRound (): void {
-    const [firstPlayerCard, player2Card] = [this._firstPlayerDeck.shift(), this._secondPlayerDeck.shift()]
-    const roundWinner: Player = firstPlayerCard.value > player2Card.value ? this._firstPlayer : this._secondPlayer
-    console.log(`Player 1: ${firstPlayerCard.value} vs Player 2: ${player2Card.value} -> ${roundWinner.name} wins`)
+    const [firstPlayerCard, secondPlayerCard] = [this._firstPlayerDeck.shift(), this._secondPlayerDeck.shift()]
+    const roundWinner: Player = firstPlayerCard.value > secondPlayerCard.value ? this._firstPlayer : this._secondPlayer
+    console.log(`Player 1: ${firstPlayerCard.value} vs Player 2: ${secondPlayerCard.value} -> ${roundWinner.name} wins`)
     roundWinner.addPoint()
   }
 

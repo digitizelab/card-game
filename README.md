@@ -7,6 +7,8 @@
 ## Running the game
 
 ```sh
+# Install dependancies
+npm i
 # Build TypeScript 
 npm run build
 # Play the game
